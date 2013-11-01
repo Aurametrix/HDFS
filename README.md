@@ -64,7 +64,7 @@ edit /usr/local/Cellar/hbase/0.94.11/libexec/conf/hbase-env.sh
 
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
 
-export HBASE_CLASSPATH=/usr/local/Cellar/hadoop/<em><u>0.94.11</u></em>/libexec/conf
+export HBASE_CLASSPATH=/usr/local/Cellar/hadoop/0.94.11/libexec/conf
 
 
 /usr/local/Cellar/hbase/0.94.11/libexec/conf/hbase-site.xml
@@ -91,9 +91,9 @@ Note that pasting it in the wrong place (adding extra xml version) will lead to
 
 ~/.bash_profile
 
-export HADOOP_HOME=/usr/local/Cellar/hadoop/<em><u>1.2.1</u></em>
+export HADOOP_HOME=/usr/local/Cellar/hadoop/1.2.1
 
-export HBASE_HOME=/usr/local/Cellar/hbase/<em><u>0.94.11/</u></em>/libexec
+export HBASE_HOME=/usr/local/Cellar/hbase/0.94.11/libexec
 
 Start HBase
 /usr/local/Cellar/hbase/0.94.11/bin/start-hbase.sh
