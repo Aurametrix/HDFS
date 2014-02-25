@@ -108,3 +108,20 @@ ERROR zookeeper.RecoverableZooKeeper: ZooKeeper exists failed after 3 retries
 
 if missing hbase.zookeeper.quorum in configuration
 A distributed Apache HBase installation depends on a running ZooKeeper cluster.
+
+
+Pig Latin
+
+To run Local Mode
+
+$ pig -x local script.pig
+
+Mapreduce Mode
+$ pig script.pig
+or
+$ pig -x mapreduce script.pig
+
+Pig supports running scripts (and Jar files) that are stored in HDFS, Amazon S3, and 
+other distributed file systems. 
+
+$ pig hdfs://full-location-URI/script.pig
