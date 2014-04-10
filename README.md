@@ -125,3 +125,22 @@ Pig supports running scripts (and Jar files) that are stored in HDFS, Amazon S3,
 other distributed file systems. 
 
 $ pig hdfs://full-location-URI/script.pig
+
+
+TEST mapreduce in python
+chmod +x mapper.py reducer.py
+
+echo "foo foo quux labs foo bar quux" | ./mapper.py
+
+echo "foo foo quux labs foo bar quux" | ./mapper.py | sort -k1,1 | ./reducer.py
+
+http://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/
+
+
+java example
+A static class holds the mapper, other static class holds the reducer, 
+and the main method works as the driver of the application. 
+
+
+45% of all Hadoop tutorials count words. 25% count sentences. 20% are about paragraphs. 10% are log 
+parsers. The remainder are helpful.”
