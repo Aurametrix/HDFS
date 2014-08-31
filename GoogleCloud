@@ -1,0 +1,45 @@
+Hadoop on Google Cloud Platform
+(setup scripts and software libraries optimized for Google Cloud - Storage, App Engine..) 
+Google Cloud Storage connector for Hadoop, you can perform 
+MapReduce jobs directly on data in Google Cloud Storage, 
+without copying to local disk and running Hadoop Distributed File System (HDFS)
+
+
+To install the cloud SDK on Mac OS X:
+curl https://sdk.cloud.google.com | bash
+(or https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.zip)
+
+Select the language (can be modified later through the gcloud component manager)
+ [1] Java
+ [2] Python and PHP
+ [3] Go
+ [4] No App Engine (you can install App Engine tools later)
+
+Installing: App Engine Launcher Application for Mac ... 
+Creating backup and activating new installation...
+Path to an rc file: /.bash_profile
+
+Restart your terminal or run ~/.<bash-profile-file>
+ 
+Authenticate to the Google Cloud platform by running:
+$ gcloud auth login
+
+Download the setup scripts
+$ curl https://storage.googleapis.com/hadoop-tools/bdutil/bdutil-latest.tar.gz > $HOME/bdutil-latest.tar.gz
+$ tar xfz bdutil-latest.tar.gz -C $HOME
+(or https://storage.googleapis.com/hadoop-tools/bdutil/bdutil-latest.zip)
+
+https://developers.google.com/storage/docs/json_api/v1/buckets
+Create a Google Cloud Storage bucket:
+Choose a unique name per the bucket naming guidelines.
+Type gsutil mb -p <PROJECT> gs://<bucket name> on the command line to create the bucket.
+To determine your project ID, do the following:
+Go to the Google Developers Console.
+Find your project in the table on the main landing page.
+The project ID appears in the second column of the table.
+
+
+
+https://developers.google.com/cloud/sdk/gettingstarted
+
+
