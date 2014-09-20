@@ -1,0 +1,26 @@
+### HDFS and MapReduce
+
+
+### Examples
+
+##### PHP
+
+###### Map is a common built-in function array_map(callback, array). Hadoop will parse the data in HDFS into user-defined keys and values, and each key and value will then be parsed to Mapper.php If working with images, ech value may be the binary contents of the file, and the Mapper may simply run a user-defined convertToPdf function against each file. In this case REducer.php won’t be needed. , as the Mappers would simply write out the PDF file to some datastore (e.g., HDFS or S3)
+
+- [x] chmod +x /home/guest/mapper.php /home/guest/reducer.php
+- [x] Download example data in a temporary directory /tmp/gtb/ & copy to Hadoop’s HDFS 
+   - [ ] http://www.gutenberg.org/files/20417/20417-8.txt 
+   - [ ] http://www.gutenberg.org/dirs/etext04/7ldvc10.txt
+   - [ ] http://www.gutenberg.org/dirs/etext03/ulyss12.txt
+- [x] bin/hadoop dfs -copyFromLocal /tmp/gtb gutenberg
+
+- [x] bin/hadoop jar contrib/hadoop-streaming.jar -mapper /home/guest/mapper.php -reducer /home/guest/reducer.php -input gutenberg/* -output gutenberg-output  
+or 
+sudo -u hdfs hadoop jar hadoop-streaming-0.20.2-cdh3u3.jar -mapper /mapreduce/mapper.php -reducer /mapreduce//reducer.php -input gutenberg/* -output gutenberg-output
+
+- [x] track the status at http://localhost:50030/
+
+- [x] bin/hadoop dfs -ls gutenberg-output
+
+
+- [x] bin/hadoop dfs -cat gutenberg-output/part-00000
