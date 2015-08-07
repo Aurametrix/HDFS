@@ -144,3 +144,29 @@ and the main method works as the driver of the application.
 
 45% of all Hadoop tutorials count words. 25% count sentences. 20% are about paragraphs. 10% are log 
 parsers. The remainder are helpful.”
+
+Stanford CS246: Mining Massive Datasets (Winter 2015)
+http://web.stanford.edu/class/cs246h/handouts.html
+
+Set up a Virtual Machine
+
+Download and install VirtualBox on your machine: http://virtualbox.org/wiki/
+Downloads
+• Download the Cloudera Quickstart VM at http://www.cloudera.com/content/cloudera/
+en/downloads/quickstart_vms/cdh-5-3-x.html.
+
+• Uncompress the VM archive. It is compressed with 7-zip. If needed you can download
+a tool to uncompress the archive at http://www.7-zip.org/.
+
+• Start VirtualBox and click Import Appliance in the File dropdown menu. Click the
+folder icon beside the location field. Browse to the uncompressed archive folder, select
+the .ovf file, and click the Open button. Click the Continue button. Click the Import
+button.
+
+• Your virtual machine should now appear in the left column. Select it and click on Start
+to launch it.
+
+• To verify that the VM is running and you can access it, open a browser to the URL:
+http://localhost:8088. You should see the resource manager UI. The VM uses port
+forwarding for the common Hadoop ports, so when the VM is running, those ports on
+localhost will redirect to the VM
