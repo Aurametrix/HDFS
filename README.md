@@ -172,3 +172,8 @@ to launch it.
 http://localhost:8088. You should see the resource manager UI. The VM uses port
 forwarding for the common Hadoop ports, so when the VM is running, those ports on
 localhost will redirect to the VM
+
+
+===
+
+[Job-Scoped Hadoop Clusters with Google Cloud](https://cloud.google.com/blog/big-data/2017/06/fastest-track-to-apache-hadoop-and-spark-success-using-job-scoped-clusters-on-cloud-native-architecture)
