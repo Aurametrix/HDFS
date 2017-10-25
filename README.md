@@ -177,3 +177,6 @@ localhost will redirect to the VM
 ===
 
 [Job-Scoped Hadoop Clusters with Google Cloud](https://cloud.google.com/blog/big-data/2017/06/fastest-track-to-apache-hadoop-and-spark-success-using-job-scoped-clusters-on-cloud-native-architecture)
+
+
+[decentralized transfer, Hadoop on IPFS](http://www.cse.unsw.edu.au/~hpaik/thesis/showcases/16s2/scott_brisbane.pdf)
